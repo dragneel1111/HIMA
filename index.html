@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMA PSTI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bokor&family=Permanent+Marker&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/logo.png" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <!-- *************************Navbar************************* -->
+    <header class="header">
+        <a href="" class="logo">
+            HIMA PSTI
+        </a>
+        <i class='bx bx-menu' id="menu" style='color:#ffffff'></i>
+        <nav class="navbar">
+            <a href="#home" style="--vlr:1" class="active;"><i class="ph ph-house" style="color: #fff;"></i>Home</a>
+            <a href="#structure" style="--vlr:2"><i class="ph ph-arrows-split" style="color: #fff;"></i>Structure</a>
+            <a href="#calender" style="--vlr:3"><i class="ph ph-calendar-dots" style="color: #fff;"></i>Calender</a>
+            <a href="#aspiration" style="--vlr:4"><i class="ph ph-broadcast" style="color: #fff;"></i></i>Aspiration</a>
+            <a href="#shop" style="--vlr:5"><i class="ph ph-toolbox" style="color: #fff;" s></i>Shop</a>
+            <a href="" class="lgn-btn" style="--vlr:6">Login</a>
+        </nav>
+    </header>
+    <!-- *************************Home Section************************* -->
+    <section class="home" id="home">
+        <div class="text-content">
+            <h1>HIMPUNAN MAHASISWA</h1>
+            <div class="text-animation">
+                <h3>PENDIDIKAN SISTEM DAN TEKNOLOGI INFORMASI</h3>
+            </div>
+            <p>HIMA PSTI adalah organisasi kemahasiswaan Program Studi<br>Pendidikan Sistem dan Teknologi Informasi<br>
+                Universitas Pendidikan Indonesia<br>kampus di Purwakarta</p>
+            <a href=""><button class="btn1">Lihat Berita
+                </button></a>
+            <a href=""><button class="btn2">Lihat Profil Prodi
+                </button></a>
+        </div>
+        <img src="./assets/logo.png" alt="">
+    </section>
+    <section class="home2" id="home2">
+        <h2 class="title">VISI <span>& MISI</span></h2>
+        <h2 class="title"><span>KABINET</span> HARSA GELORA</h2>
+        <center><img src="./assets/logo3.png" alt=""></center>
+        <div class="row">
+            <div class="column">
+                <div class="text-content2">
+                    <h2>VISI</h2>
+                    <p>Terwujudnya HIMA PSTI sebagai organisasi
+                        yang aspiratif, profesional, berintegritas,
+                        dan berorientasi pada pengembangan mahasiswa
+                        yang mampus mengimplementasikan tridharma
+                        perguruan tinggi dengan berasas kekeluargaan.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="text-content2">
+                    <h2>MISI</h2>
+                    <ol>
+                        <li>Membangun sistem organisasi yang profesional dan transparan</li>
+                        <li> Meningkatkan integritas dan moralitas mahasiswa PSTI</li>
+                        <li>Mendorong mahasiswa untuk aktif dalam mengimplementasikan
+                            tridharma perguruan tinggi</li>
+                        <li>Mengembangkan potensi mahasiswa dalam berbagai bidang
+                            sesuai minat dan bakat</li>
+                        <li>Membangun jaringan dan kolaborasi dengan berbagai pihak</li>
+                        <li>Menampung aspirasi mahasiswa PSTI dan menjalankan fungsi
+                            pengawasan secara optimal</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *************************Structure Section************************* -->
+    <section class="structure" id="structure">
+        <h2 class="title"><span>STRUKTUR ORGANISASI</span><br>HIMA PSTI</h2>
+        <div class="card-container">
+            <div class="column">
+                <div class="card">
+                    <img src="./assets/hima1.jpg" alt="">
+                    <h3>BADAN LEGISLATIF</h3>
+                    <a href=""><button class="btn3">Lihat Struktur</button></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="./assets/hima2.jpg" alt="">
+                    <h3>BADAN EKSEKUTIF</h3>
+                    <a href=""><button class="btn3">Lihat Struktur</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- *************************calender Section************************* -->
+
+    <!-- *************************ASpiration Section************************* -->
+    <section class="aspiration" id="aspiration">
+        <h2 class="title">ASPIRATION</span></h2>
+        <form id="aspiration-form" action="save_aspiration.php" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" required placeholder="Full Name">
+                <input type="email" name="email" required placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="tel" name="phone" required placeholder="Mobile Number">
+                <input type="text" name="subject" required placeholder="Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Aspiration" class="btn">
+        </form>
+    </section>
+
+    <!-- *************************others Section************************* -->
+
+    <footer>
+        <div class="text">
+            <p>© Copyright 2024 <b>Rafli A.</b> All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
